@@ -260,16 +260,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 /*header css */
 .header {
-    background-color: #EB9149;
+    background-color: #fa9a62;
     float: none;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1500px;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    max-width: 100%;
+    padding-bottom: 30px;
+    padding-top: 50px;
     width: 100%;
-	position:relative;
-	min-height:130px;
+    position: relative;
+    min-height: 110px;
 }
 .preserve-whitespace {
     white-space: pre-wrap;
@@ -278,6 +278,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     clear: both;
     content: '';
     display: table;
+}
+ul.header-menu.desktop {
+    margin-top: -10px;
 }
 .logo-wrap {
     max-width: 100%;
@@ -303,9 +306,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 .logo {
     font-family: ftnk;
-    font-size: 30px;
+    font-size: 48px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 10px;
     padding-bottom: 0px;
     padding-left: 19%;
@@ -532,6 +535,7 @@ ul {
     position: fixed;
     right: 30px;
     bottom: 60px;
+	z-index:999;
 }
 .back-to-top a {
     color: #000;
@@ -605,10 +609,16 @@ ul.header-menu li a {
     font-weight: 400;
     letter-spacing: 2px;
 }
+ul.header-menu li.active a{
+	font-weight:800;
+}
+.text-center{
+	text-align:center;
+}
 .project-module {
     position: relative;
 }
-.image-with-content, .video-content {
+.video-content {
     position: absolute;
     top: 50%;
     left: 0;
@@ -617,16 +627,68 @@ ul.header-menu li a {
     text-align: center;
     right: 0;
     margin: 0 auto;
-    max-width: 730px;
+    max-width: 90%;
     color: #fff;
     transform: translateY(-50%);
 }
+.video-content h3{
+	font-size:48pt;
+	line-height:1;
+	font-weight:700;
+	text-transform:none;
+	color:#fff;
+}
+.sub-title2{
+	font-size:48pt;
+	line-height:1;
+	font-weight:700;
+	text-transform:none;
+	
+}
+.image-with-content {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    right: 0;
+    margin: 0 auto;
+    max-width: 90%;
+    color: #fff;
+}
 .image-with-content h2, .video-content h2{
+	color:#fff;
+}
+.image-with-content h2{
+	font-size:52pt;
+	line-height:1;
+	font-weight:700;
+	text-transform:none;
+	color:#fff;
+}
+.image-with-content h3{
+	font-size:48pt;
+	line-height:1;
+	font-weight:700;
+	text-transform:none;
 	color:#fff;
 }
 .one-second.column {
     width: 48%;
 }
+
+@media (min-width: 768px){
+.v-align-center{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.left-right-text{
+	padding:50px;
+}	
+}
+
 footer .widgets_wrapper .column {
     margin-bottom: 0;
 }
@@ -898,6 +960,56 @@ a#back_to_top.button.button_js, #popup_contact > a.button {
     position: relative;
 }
 @media (max-width: 767px){
+.one-second.column {
+    width: 100%;
+}
+.video-content h3 {
+    font-size: 14pt;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: none;
+    color: #fff;
+}
+.video-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    right: 0;
+    margin: 0 auto;
+    max-width: 98%;
+    color: #fff;
+    transform: inherit;
+}	
+
+iframe.embed-content {
+    height: 300px !important;
+}
+.sub-title2 {
+    font-size: 14pt;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: none;
+    margin-top: 20px !important;
+}
+.image-with-content h2 {
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
+.image-with-content h3 {
+    font-size: 14pt;
+    line-height: 1.5;
+}
+.page img, .page object {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 290px;
+}
+
 ul.header-menu li {
     display: block;
     vertical-align: top;
