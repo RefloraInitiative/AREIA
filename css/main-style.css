@@ -636,7 +636,7 @@ ul.header-menu li.active a{
 .video-content h3{
 	font-size:48pt;
 	line-height:1;
-	font-weight:400;
+	font-weight:300;
 	text-transform:none;
 	color:#fff;
 }
@@ -1564,7 +1564,7 @@ ul.header-menu li a {
 .video-content h3 {
     font-size: 40pt;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: none;
     color: #fff;
 }
