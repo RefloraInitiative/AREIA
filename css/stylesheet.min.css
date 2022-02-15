@@ -9,6 +9,9 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Rubik', sans-serif;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight:300;
+}
 #back_to_top {
     float: right;
     margin: -9px 0 0;
