@@ -663,18 +663,20 @@ ul.header-menu li.active a{
 	color:#fff;
 }
 .image-with-content h2 {
-    font-size: 60pt;
-    line-height: 1;
+    font-size: 46px;
+    line-height: normal;
     font-weight: 300;
-    text-transform: none;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 .image-with-content h3{
-	font-size: 60pt;
-    line-height: 1;
+	 font-size: 46px;
+    line-height: normal;
     font-weight: 300;
-    text-transform: none;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 .one-second.column {
     width: 48%;
@@ -715,14 +717,14 @@ ul.header-menu li.active a{
 	height: 100%;
 }
 .video-container .embed-dimensions{
-	max-width:1370px;
+	max-width:100%;
 	position:relative;
 	margin:0 auto;
 	overflow:hidden;
 	line-height:0px;
 }
 .video-container .embed-dimensions .embed-aspect-ratio {
-    margin-top: -60px;
+    margin-top: -80px;
 }
 .graphic-img {
     text-align: center;
@@ -777,6 +779,9 @@ hr.no_line {
 }
 i.icon-mail.themecolor {
     margin-right: 5px;
+    margin-top: 4px;
+    display: inline-block;
+    vertical-align: top;
 }
 #Footer .footer_copy .one {
     margin-bottom: 20px;
@@ -840,7 +845,8 @@ footer h4 {
     color: #fa9a62;
     font-size: 22px;
     font-weight: 400;
-	letter-spacing: 3px;
+    letter-spacing: 3px;
+    margin-bottom: 35px !important;
 }
 #Footer .footer_copy {
     border-top-color: rgba(0,0,0,0.1);
@@ -981,9 +987,14 @@ a#back_to_top.button.button_js, #popup_contact > a.button {
     margin: 0 0 0 60px!important;
     padding: 0!important;
 }
-#Footer h3, #Footer h5 a {
+#Footer h3 {
+    color: #fa9a62;
+	font-weight:300;
+}
+#Footer h5 a {
     color: #fa9a62;
 	font-weight:400;
+	font-size:19px;
 }
 #sb_instagram .sbi_type_carousel .sbi_playbtn, #sb_instagram .sbi_type_carousel .svg-inline--fa.fa-play, #sb_instagram .sbi_type_video .sbi_playbtn, #sb_instagram .sbi_type_video .svg-inline--fa.fa-play, .sbi_type_carousel .fa-clone {
     display: block!important;
@@ -1024,7 +1035,7 @@ a#back_to_top.button.button_js, #popup_contact > a.button {
 #sb_instagram .sb_instagram_header .sbi_header_text {
     float: left;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 #sb_instagram .sb_instagram_header .sbi_header_hashtag_icon .sbi_new_logo, #sb_instagram .sb_instagram_header .sbi_header_img_hover .sbi_new_logo {
     position: absolute;
@@ -1230,12 +1241,12 @@ footer aside#custom_html-4 h4 {
     padding: 20px;
 }
 .image-with-content h2 {
-    font-size: 14pt;
+    font-size: 12pt;
     line-height: 1;
 }
 
 .image-with-content h3 {
-    font-size: 14pt;
+    font-size: 12pt;
     line-height: 1;
 }
 .video-container .embed-dimensions .embed-aspect-ratio {
@@ -1436,7 +1447,7 @@ section.back-to-top {
 .sub-title2 {
     font-size: 30pt;
     line-height: 1.2;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: none;
 }
 iframe.embed-content {
@@ -1553,14 +1564,7 @@ ul.header-menu li a {
     margin-top: -8px;
     margin-right: 20px;
 }
-.image-with-content h2 {
-    font-size: 40pt;
-    line-height: 1.2;
- }
- .image-with-content h3 {
-       font-size: 40pt;
-    line-height: 1.2;
-}
+
 .video-content h3 {
     font-size: 40pt;
     line-height: 1;
@@ -1576,17 +1580,62 @@ iframe.embed-content {
 }
 }
 @media (min-width: 1200px){
-.logo {
-    font-size: 32px;
-}
 .column.one-second.instagram-left-col {
     padding-right: 300px;
+}
+.header {
+    padding-left: 1%;
+}
+.logo-wrap {
+    margin: 0 30px 0 20px;
+}
+.header {
+    padding-top: 42px;
+}
+ul.header-menu.desktop {
+    margin-top: 10px;
+}	
+ul.header-menu li {
+    margin: 0 12px;
+}
+ul.header-menu li a {
+     letter-spacing: 0px;
+}
+}
+
+@media (min-width: 1366px){
+.header {
+    padding-left: 1%;
+}
+.logo-wrap {
+    margin: 0 30px 0 20px;
+}
+ul.header-menu li a {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.header {
+    padding-top: 42px;
+}
+ul.header-menu.desktop {
+    margin-top: 10px;
 }	
 }
+
 @media (min-width: 1600px){
-.logo {
-    font-size: 40px;
-}	
+.header {
+    padding-left: 0%;
+}
+.logo-wrap {
+    margin: 0 30px 0 0px;
+}
+ul.header-menu li {
+    margin: 0 17px;
+}
+ul.header-menu li a {
+    letter-spacing: 2px;
+}
 }
 
 
