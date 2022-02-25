@@ -648,8 +648,8 @@ ul.header-menu li.active a{
 	
 }
 .image-with-content {
-    position: absolute;
-    bottom: 30px;
+    position: relative;
+    bottom: inherit;
     left: 0;
     z-index: 99;
     width: 100%;
@@ -658,6 +658,7 @@ ul.header-menu li.active a{
     margin: 0 auto;
     max-width: 90%;
     color: #fff;
+    padding: 210px 0 30px;
 }
 .image-with-content h2, .video-content h2{
 	color:#fff;
@@ -1151,6 +1152,14 @@ ul.linguas li a {
 	margin:0 10px;
 }
 @media (max-width: 767px){
+    .qbutton {
+        padding: 0 5px;
+        font-size: 12px;
+        letter-spacing: 0px;
+       }
+    .image-with-content {
+        padding: 120px 0 30px;
+    }
 .one-second.column {
     width: 100%;
     margin: 0;
@@ -1422,6 +1431,9 @@ section.back-to-top {
 
 
 @media (min-width: 768px) and (max-width: 991px){
+    .image-with-content {
+        padding: 120px 0 30px;
+    }
 .desktop {
     display: none;
 }	
@@ -1638,4 +1650,10 @@ ul.header-menu li a {
 }
 }
 
-
+.banner-main-bg {
+    background: url(../images/aa.png) no-repeat center top;
+    background-size:cover;
+}
+.get-to-know {
+    color: #fa9a62;
+}
